@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   height="800px"
+   width="800px"
+   version="1.1"
+   id="Capa_1"
+   viewBox="0 0 53 53"
+   xml:space="preserve"
+   sodipodi:docname="kipart.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   inkscape:export-filename="kipart_24x24.png"
+   inkscape:export-xdpi="2.8800001"
+   inkscape:export-ydpi="2.8800001"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs10" /><sodipodi:namedview
+   id="namedview10"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="true"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:window-width="1920"
+   inkscape:window-height="1131"
+   inkscape:window-x="1912"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Capa_1" />
+
+
+
+
+
+<path
+   id="path3"
+   style="fill:#4667db;fill-opacity:1;stroke:none;stroke-width:1.00392;stroke-linecap:round;stroke-linejoin:round"
+   d="M 1.3044263 15.9 C 0.5817871 15.9 0 16.481787 0 17.204426 L 0 27.845574 C 1.5691136e-16 28.568213 0.5817871 29.15 1.3044263 29.15 L 51.695574 29.15 C 52.418213 29.15 53 28.568213 53 27.845574 L 53 17.204426 C 53 16.481787 52.418213 15.9 51.695574 15.9 L 1.3044263 15.9 z M 4.6413818 18.55 A 1.991321 1.991321 0 0 1 6.6326343 20.541382 A 1.991321 1.991321 0 0 1 4.6413818 22.532634 A 1.991321 1.991321 0 0 1 2.65 20.541382 A 1.991321 1.991321 0 0 1 4.6413818 18.55 z " /><path
+   id="path2"
+   style="fill:#4667db;fill-opacity:1;stroke:none;stroke-width:1.00392;stroke-linecap:round;stroke-linejoin:round"
+   d="M 1.3044263 0 C 0.58178716 1.5691136e-16 0 0.58178716 0 1.3044263 L 0 11.945574 C 1.5691136e-16 12.668213 0.58178716 13.25 1.3044263 13.25 L 51.695574 13.25 C 52.418213 13.25 53 12.668213 53 11.945574 L 53 1.3044263 C 53 0.58178716 52.418213 0 51.695574 0 L 1.3044263 0 z M 4.6413818 2.65 A 1.991321 1.991321 0 0 1 6.6326343 4.6413818 A 1.991321 1.991321 0 0 1 4.6413818 6.6326343 A 1.991321 1.991321 0 0 1 2.65 4.6413818 A 1.991321 1.991321 0 0 1 4.6413818 2.65 z " /><path
+   id="path4"
+   style="fill:#4667db;fill-opacity:1;stroke:none;stroke-width:1.00392;stroke-linecap:round;stroke-linejoin:round"
+   d="M 1.3044263 31.8 C 0.58178716 31.8 0 32.381787 0 33.104426 L 0 43.745574 C 0 44.468213 0.58178716 45.05 1.3044263 45.05 L 51.695574 45.05 C 52.418213 45.05 53 44.468213 53 43.745574 L 53 33.104426 C 53 32.381787 52.418213 31.8 51.695574 31.8 L 1.3044263 31.8 z M 4.6413818 34.45 A 1.991321 1.991321 0 0 1 6.6326343 36.441382 A 1.991321 1.991321 0 0 1 4.6413818 38.432634 A 1.991321 1.991321 0 0 1 2.65 36.441382 A 1.991321 1.991321 0 0 1 4.6413818 34.45 z " /><rect
+   style="fill:#b6c4fa;fill-opacity:1;stroke:none;stroke-width:0.783064;stroke-linecap:round;stroke-linejoin:round"
+   id="rect2"
+   width="39.75"
+   height="2.6500001"
+   x="6.625"
+   y="13.25"
+   ry="0" /><rect
+   style="fill:#b6c4fa;fill-opacity:1;stroke:none;stroke-width:0.783064;stroke-linecap:round;stroke-linejoin:round"
+   id="rect2-4"
+   width="39.75"
+   height="2.6500001"
+   x="6.625"
+   y="29.15"
+   ry="0" /><path
+   fill-rule="evenodd"
+   clip-rule="evenodd"
+   d="m 20.638995,40.055598 c 0,-7.093031 5.559345,-12.944402 12.539889,-12.944402 6.008305,0 10.967467,4.339562 12.228739,10.068432 C 49.662933,37.231288 53,40.807991 53,45.089514 53,49.402427 49.613906,53 45.314261,53 H 33.178884 C 26.19834,53 20.638995,47.148645 20.638995,40.055598 Z"
+   fill="#323232"
+   id="path1"
+   style="fill:#ffa350;fill-opacity:1;stroke-width:1.61805" /></svg>

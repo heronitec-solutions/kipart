@@ -1,0 +1,41 @@
+(kicad_symbol_lib
+  (version 20220914)
+  (generator "kicad_symbol_editor")
+  (symbol "TEST_R"
+    (pin_numbers hide)
+    (pin_names
+      (offset 0.254)
+    )
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "R"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "TEST_R"
+      (at 0 -2 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (symbol "TEST_R_0_1"
+      (rectangle
+        (start -1 1)
+        (end 1 -1)
+        (stroke
+          (width 0.254)
+          (type default)
+        )
+        (fill
+          (type none)
+        )
+      )
+    )
+  )
+)

@@ -1,0 +1,36 @@
+{
+    "$schema": "https://go.kicad.org/pcm/schemas/v1",
+    "name": "KiPart Client",
+    "description": "Manage part data using an http library",
+    "description_full": "This plugin utilizes the new KiCad http library and extends it with a web component to manage part data like part number, manufacturer, distributor order number...",
+    "identifier": "com.github.heronitec-solutions.kipart",
+    "type": "plugin",
+    "author": {
+        "name": "Heronitec Solutions GmbH",
+        "contact": {
+            "github": "https://github.com/heronitec-solutions",
+            "web": "https://www.heronitec-solutions.com"
+        }
+    },
+    "maintainer": {
+        "name": "Heronitec Solutions GmbH",
+        "contact": {
+            "github": "https://github.com/heronitec-solutions",
+            "web": "https://www.heronitec-solutions.com"
+        }
+    },
+    "license": "GPL-3.0",
+    "resources": {
+        "homepage": "https://github.com/heronitec-solutions/kipart"
+    },
+    "versions": [
+        {
+            "download_size": 14967,
+            "download_url": "https://github.com/heronitec-solutions/kipart/releases/download/v2.0.0/kipart.zip",
+            "install_size": 55337,
+            "version": "2.0.0",
+            "status": "stable",
+            "kicad_version": "10.0"
+        }
+    ]
+}

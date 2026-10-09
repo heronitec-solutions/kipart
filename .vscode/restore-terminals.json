@@ -1,0 +1,16 @@
+{
+    "artificialDelayMilliseconds": 2000,
+    "keepExistingTerminalsOpen": false,
+    "runOnStartup": true,
+    "terminals": [
+      {
+        "splitTerminals": [
+          {
+            "name": "Test",
+            "commands": ["clear;python build_package.py"],
+            "shouldRunCommands": false
+          }
+        ]
+      }
+    ]
+  }
