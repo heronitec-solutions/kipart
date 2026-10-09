@@ -35,16 +35,35 @@ def create_build_subdirs():
     print(f"Created build subdirectories: '{plugins_dir}' and '{resources_dir}'.")
 
 
-def copy_python_files_to_plugins():
-    # Copy all *.py files from script root into tmp/plugins, excluding build_package.py.
+def copy_python_files_to_plugins(build_dir=BUILD_DIR):
+    """Stage the plugin the way KiCad's content manager loads it.
+
+    PCM extracts the zip to 3rdparty/plugins/<id>/ and imports plugins/__init__.py.
+    That import pulls in the KiPartClient package and the dialog icons next to the
+    action plugin. Copying only the root *.py files leaves both out, the import
+    fails, and the PCB toolbar button never appears.
+    """
     root = Path(__file__).resolve().parent
+    plugins_dir = Path(build_dir) / "plugins"
+    plugins_dir.mkdir(parents=True, exist_ok=True)
 
     for py_file in root.glob("*.py"):
         if py_file.name == SCRIPT_NAME:
             continue
-        shutil.copy2(py_file, Path(BUILD_DIR) / "plugins" / py_file.name)
+        shutil.copy2(py_file, plugins_dir / py_file.name)
 
-    print(f"Copied Python files to '{Path(BUILD_DIR) / "plugins"}' (excluding '{SCRIPT_NAME}').")
+    shutil.copytree(
+        root / "KiPartClient",
+        plugins_dir / "KiPartClient",
+        ignore=shutil.ignore_patterns("__pycache__", "*.pyc", "*.pyo"),
+    )
+
+    gui_resources = plugins_dir / "resources"
+    gui_resources.mkdir(parents=True, exist_ok=True)
+    for png in (root / "resources").glob("*.png"):
+        shutil.copy2(png, gui_resources / png.name)
+
+    print(f"Copied plugin files to '{plugins_dir}' (excluding '{SCRIPT_NAME}').")
 
 
 def copy_plugin_assets():

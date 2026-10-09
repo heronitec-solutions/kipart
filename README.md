@@ -39,13 +39,13 @@ To get the most current version of the plugin, clone the repo in the plugin dire
 
 ```bash
 # Linux (KiCad from Ubuntu PPA)
-# TODO
-# Linux (KiCad 9 from FlatPak)
-cd <HOME>/.var/app/org.kicad.KiCad/data/kicad/9.0/3rdparty/plugins
+cd <HOME>/.local/share/kicad/10.0/3rdparty/plugins
+# Linux (KiCad 10 from FlatPak)
+cd <HOME>/.var/app/org.kicad.KiCad/data/kicad/10.0/3rdparty/plugins
 # Windows
-cd C:\Users\<USERNAME>\Documents\KiCad\9.0\3rdparty\plugins
+cd C:\Users\<USERNAME>\Documents\KiCad\10.0\3rdparty\plugins
 # Mac
-cd <HOME>/Documents/KiCad/9.0/3rdparty/plugins
+cd <HOME>/Documents/KiCad/10.0/3rdparty/plugins
 
 # then clone the repo main branch
 git clone --depth 1 https://github.com/heronitec-solutions/kipart

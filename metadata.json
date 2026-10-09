@@ -25,10 +25,10 @@
     },
     "versions": [
         {
-            "download_size": 14967,
+            "download_size": 73458,
             "download_url": "https://github.com/heronitec-solutions/kipart/releases/download/v2.0.0/kipart.zip",
-            "install_size": 55337,
-            "version": "2.0.0",
+            "install_size": 291932,
+            "version": "2.0.1",
             "status": "stable",
             "kicad_version": "10.0"
         }
