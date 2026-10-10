@@ -1,32 +1,11 @@
 # KiPart  
 
-This [KiCad EDA](https://www.kicad.org/) plugin utilizes the new KiCad database and http library feature and extends it with a web component to manage part data like part numbers, manufacturers, distributor order numbers...
+This [KiCad EDA](https://www.kicad.org/) plugin utilizes the new KiCad database and http library feature and extends it with a web component to manage part data like part numbers, manufacturers, distributor order numbers. It requires an Instance of https://heronitec-solutions.github.io/KiPartServer/ .
 
 ## Web Component 
 
-To use this plugin you need the KiPart web component. It can be found on [Docker Hub]() and [GitLab]().
+To use this plugin you need the KiPart web component. It can be found on [Docker Hub](https://hub.docker.com/r/heronitecsolutions/kipart-server) and [GitLab](https://heronitec-solutions.github.io/KiPartServer/).
 
-## Server requirement (API v2)
-
-**KiPart Client 2.0.0+ requires a KiPart Server with API version ≥ 2** (versioning, blob store, atomic commits). The plugin checks `GET /api/info` and refuses sync if `apiVersion < 2`.
-
-### Author setting
-
-Each library configuration has an **Author** field (default: Windows/login username). It is sent with every commit created during Sync.
-
-### Commit dialog
-
-When Sync has remote changes to upload, a commit dialog asks for a **required message** (and shows the change list). Cancel skips the upload; local downloads/renames/deletes are still applied.
-
-### Meta file migration
-
-`.kipart_sync` is now **v2** (UUID-keyed entries, `last_commit_id`). On first Check after upgrade, v1 meta is migrated automatically and backed up as `.kipart_sync.v1.bak`.
-
-Blobs created by the server’s v1→v2 migration may still contain the old (non-canonical) text. After meta migration, Check detects semantic matches (local canonical text == canonicalize(server data)) and queues a one-time **canonicalisation commit** (`"Canonicalize library content after migration to API v2"`). The next Sync applies that commit automatically (no commit dialog for that commit only). Afterward, Check reports 0 changes.
-
-### Multiple 3D models
-
-Footprints may reference **several** `(model …)` blocks. Check/Sync uploads all of them with offset/scale/rotate/hide, and downloads restore models from the server `models[]` list.
 ## Installation
 
 ### Automated, via KiCad plugin manager
@@ -68,14 +47,14 @@ Same as above, but instead cloning the main branch, clone the desired tag:
 
 ```bash
 # clone the repo tag
-git clone --depth 1 --branch v1.6.0 https://github.com/heronitec-solutions/kipart
+git clone --depth 1 --branch v2.0.1 https://github.com/heronitec-solutions/kipart
 ```
 
 ## Known Problems
 
 ### Plugin icon position
 
-At the moment (KiCad v9.0) it's only possible to display a plugin icon in the PCB editor. We will move it to the symbol and footprint editor when the required KiCad feature is available ([KiCad Issue 19418](https://gitlab.com/kicad/code/kicad/-/issues/19418))
+At the moment (KiCad v10.0) it's only possible to display a plugin icon in the PCB editor. We will move it to the symbol and footprint editor when the required KiCad feature is available ([KiCad Issue 19418](https://gitlab.com/kicad/code/kicad/-/issues/19418))
 
 ### Missing Paths / Libraries
 
